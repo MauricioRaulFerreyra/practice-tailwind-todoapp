@@ -19,10 +19,12 @@ const useToggleTheme = () => {
     // Aplica el tema al DOM y guarda en localStorage
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
+      localStorage.setItem('theme', 'dark');
+      // localStorage.theme = 'dark';
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
+      localStorage.setItem('theme', 'light');
+      // localStorage.theme = 'light';
     }
   }, [theme]);
 

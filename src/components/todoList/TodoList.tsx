@@ -8,7 +8,7 @@ interface TodoListProps {
 
 const TodoList: React.FC<TodoListProps> = ({ todos, setTodo }) => {
   return (
-    <div className='bg-white rounded-t-md mt-8'>
+    <div className='bg-white overflow-hidden rounded-t-md mt-8'>
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} setTodo={setTodo} />
       ))}
