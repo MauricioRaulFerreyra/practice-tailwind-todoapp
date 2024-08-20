@@ -37,7 +37,7 @@ function App(): JSX.Element {
 
   return (
     <>
-      <div className=" bg-[url('./assets/images/bg-mobile-light.jpg')] bg-contain bg-no-repeat bg-gray-300 min-h-screen dark:bg-gray-900">
+      <div className=" bg-[url('./assets/images/bg-mobile-light.jpg')] bg-contain bg-no-repeat bg-gray-300 min-h-screen dark:bg-gray-900 dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]">
         <Header />
         <main className=' container mx-auto px-4 mt-3'>
           <TodoAdd handleAddTodo={(title) => handleAddTodo({ title, setTodo })} />

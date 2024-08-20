@@ -1,5 +1,10 @@
 import { ITodo } from '@/interfaces/todo.interface';
-import { IUpdateTodo } from '@/interfaces/updateTodo.interface';
+import { SetStateAction } from 'react';
+
+interface IUpdateTodo {
+  id: number;
+  setTodo: React.Dispatch<SetStateAction<ITodo[]>>;
+}
 
 const updateTodo = ({ id, setTodo }: IUpdateTodo): void => {
   setTodo((prevTodos: ITodo[]) =>
